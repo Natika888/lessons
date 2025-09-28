@@ -1,0 +1,54 @@
+@import url("reset.css");
+
+* {
+    color: black;
+}
+h1 {
+    color: red;
+}
+
+h2,
+h3 {
+    color: blue;
+    font-size: 20px;
+}
+
+p {
+    color: gray;
+}
+
+.rules__item {
+    color: rgb(225, 65, 214);
+}
+
+#secure {
+    color: brown;
+}
+
+[class*="img"] {
+	color: green;
+}
+
+p.secure__text {
+	color: red;
+}
+
+.characters .soil__item {
+    color: orange;
+}
+
+.garden__title ~ p {
+	color: green;
+} 
+
+.footer > p {
+	color: rgb(17, 3, 100);
+}
+
+.characters__text + h3 {
+    color: purple;
+}
+
+.nav__item.list {
+    color: purple;
+}
