@@ -1,0 +1,75 @@
+@import url("reset.css");
+
+body {
+    font-family: "Lato", sans-serif;
+    color: #7E7F7C;
+}
+
+.header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 500px;
+    min-height: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.why__header {
+    font-size: 32px;
+    font-weight: bolder;
+    color: #2F302C;
+    text-align: center;
+}
+
+
+
+.main,
+.footer {
+    width: 1180px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.why {
+    width: 1258px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.why__header {
+    margin: 72px 0;
+}
+
+
+
+.card {
+    display: inline-block;
+    min-width: 300px;
+    max-width: 350px;
+    margin-bottom: 68px;
+    padding-left: 34px;
+    padding-right: 34px;    
+    vertical-align: top;
+    
+}
+
+.card__text {
+    font-weight: 500;    
+    vertical-align: top;
+}
+
+
+.card * {
+    margin-bottom: 24px;    
+}
+
+h2 {
+    color: #2F302C;
+}
+
+.footer {
+    padding-bottom: 50px;
+}
+
+
+
