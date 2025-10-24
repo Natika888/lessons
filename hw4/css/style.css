@@ -1,0 +1,51 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
+
+body {
+	font-family: "Lato", serif;
+	font-size: 14px;
+}
+
+[class*="__title"] {
+    font-family: "PraysireDemo";
+    font-weight: 900;
+    font-size: 24px;
+	color: green;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 16px;
+    white-space: wrap;
+}
+
+.description_span {
+    font-family: "Montserrat", serif;
+    font-size: 18px;
+    font-weight: 700;
+    word-spacing: 25px;
+}
+
+.italic {
+    font-style: italic;
+    text-decoration-style: dashed;
+    text-decoration-color: blue;
+    text-underline-offset: 5px;
+}
+
+.nav__item {
+    text-decoration-line: underline;
+    line-height:1.75;
+}
+
+.line-through {
+    text-decoration: line-through;
+    text-shadow: 5px 5px 3px #000;
+    letter-spacing: 2px;
+}
