@@ -1,0 +1,125 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+
+/* Значення за замовченням  */
+body {
+	font-family: "Lato", sans-serif;	
+	color:#2F302C ;}
+.wrapper {
+	position: relative;
+	min-height: 100%;
+	overflow: clip;
+
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+
+/* ------------------------------------------------------------------- */
+
+[class*="__container"] {
+	max-width: 1392px;
+	margin: 0 auto;
+}
+
+.featured,
+.choose {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 80px 0;
+	/* display: flex;
+	flex-wrap: wrap; */
+}
+.featured__title,
+.choose__title {
+	font-size: 32px;
+	font-weight: 800;
+	line-height: 125%; /* 40/32 */	
+	margin-bottom: 36px;
+}
+.featured__menu {
+	display: flex;
+	gap: 48px;
+	text-transform: uppercase;
+	margin-bottom: 72px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 125%;	
+}
+
+.featured__menu-item {
+	padding-bottom: 8px;
+}
+.featured__menu-item:first-child {
+	border-bottom: 1.7px solid #2F302C;	
+}
+.featured__cards,
+.choose__cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 36px;
+	
+}
+.featured__card,
+.choose__card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 12px;
+	flex-basis: 440px;
+	flex-shrink: 1;
+}
+.card__image {
+	margin-bottom: 20px;
+}
+.card__title {
+	font-weight: 500;
+	line-height: 125%;
+}
+.card__rates {
+	display: flex;
+	gap: 4px;
+}
+.card__rate {
+	width: 12px;
+	height: 12px;
+}
+.card__price {
+	font-size: 20px;
+	font-weight: 800;
+	line-height: 140%;
+}
+
+.choose {
+}
+.choose__card-title {
+	font-weight: 700;
+	line-height: 125%;
+}
+.choose__cards {
+	gap: 68px;
+}
+.choose__card {
+	flex-grow: 0;
+	flex-basis: 350px;
+	gap: 24px;
+
+}
+.choose__image {
+}
+.choose__text {
+	line-height: 125%;
+	color: #7E7F7C;
+	text-align: center;
+}
+
+.footer__text {
+	color: #7E7F7C;
+	text-align: center;
+}
