@@ -41,10 +41,13 @@ body {
 	font-weight: 800;
 	line-height: 125%; /* 40/32 */	
 	margin-bottom: 36px;
+	text-align: center;
 }
 .featured__menu {
 	display: flex;
+	justify-content: center;
 	gap: 48px;
+	flex-wrap: wrap;
 	text-transform: uppercase;
 	margin-bottom: 72px;
 	font-weight: 700;
@@ -52,10 +55,10 @@ body {
 	line-height: 125%;	
 }
 
-.featured__menu-item {
+.menu-featured__item {
 	padding-bottom: 8px;
 }
-.featured__menu-item:first-child {
+.menu-featured__item:first-child {
 	border-bottom: 1.7px solid #2F302C;	
 }
 .featured__cards,
@@ -98,7 +101,7 @@ body {
 
 .choose {
 }
-.choose__card-title {
+.choose__header {
 	font-weight: 700;
 	line-height: 125%;
 }
