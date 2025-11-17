@@ -1,0 +1,308 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+
+/* Значення за замовченням  */
+body {
+	font-family: "Lato", sans-serif;	
+	color:#2F302C ;}
+.wrapper {
+	position: relative;
+	min-height: 100%;
+	overflow: clip;
+
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+
+/* ------------------------------------------------------------------- */
+
+[class*="__container"] {
+	max-width: 1422px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+
+.header {
+	text-transform: uppercase;
+	padding: 60px 0;
+}
+.header__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 80px;
+}
+
+.header__search {
+	position: relative;
+	width: 264px;
+	padding: 12px 0 12px 32px;
+	border-bottom: 1px solid #7E7F7C;
+}
+
+.header__search::before {
+	content: "";	
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 20px;
+	height: 20px;	
+	background: url("../img/search.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.header__search::placeholder {
+	font-weight: 500;
+	color: #7E7F7C;
+}
+
+.nav__list {
+	display: flex;
+	gap: 44px;
+}
+.nav__item {	
+	flex-shrink: 0;
+}
+
+.nav__link.shop {
+	position: relative;
+	max-width: 66px;	
+}
+
+.shop {
+	padding-right: 20px;
+}
+.shop::after {
+	content: url("../img/chevron-down.svg");
+	position: absolute;
+	right: 0;
+}
+
+.actions {
+	display: flex;
+	justify-content: end;
+	gap: 44px;
+	margin-left: 140px;
+}
+.actions__list {
+	display: flex;
+	gap: 44px;
+}
+
+.actions__link {
+	position: relative;
+	padding-left: 24px;
+}
+
+.love::before {
+	content: url("../img/heart.svg");
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+
+}
+
+.cart::before {
+	content: url("../img/cart.svg");
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+
+}
+
+.hero {	
+    background-image: url("../img/hero.jpg");
+	background-repeat: no-repeat;   
+	background-size: cover; 
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+.hero__content {
+	width: 50%;
+	}
+
+.hero__container {
+	display: flex;
+	justify-content: flex-end;	
+}
+
+.hero__subtitle {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 140%;
+    margin-bottom: 20px;
+}
+
+.hero__title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 96px;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.hero__title span {
+    font-weight: bold;
+}
+
+hr {
+    width: 308px;
+    height: 1px;
+    background-color: #2F302C;
+    border: none;
+    margin-bottom: 36px;
+}
+
+.hero__text {
+    max-width: 374px;
+    font-weight: 500;
+    color: #7E7F7C;
+    line-height: 125%;
+}
+
+.footer__text {
+	color: #7E7F7C;
+	text-align: center;
+}
+
+@media (width < 1415px) {
+	.header__container {
+		gap: 40px;
+	}
+
+	.header__search {
+		width: 176px;
+	}
+
+	.actions {
+		margin-left: 0;
+	}
+
+	.hero__container {
+	    justify-content: center;
+}
+
+	.hero__content {
+		margin-left: 30%;
+	}
+
+	.hero {
+		background-position-x: center;
+	}
+}
+
+@media (width < 1090px) {
+	.header__container {
+		flex-wrap: wrap;
+		justify-content: center;
+		column-gap: 140px;
+		row-gap: 60px;
+	}
+	.header__logo {
+		order: 2;
+	}
+	.header__search {
+		order: 1;
+	}
+	.nav {
+		order: 4;
+	}
+
+	.actions {
+		order: 3;
+	}
+
+	.hero__content {
+		margin-left: 0;
+	}
+}
+
+@media (width < 865px) {
+	.header {
+    
+    padding: 30px 0;
+}
+	.header__container {		
+		column-gap: 300px;
+		row-gap: 30px;
+	}
+	.header__logo {
+		order: 1;
+	}
+	.header__search {
+		order: 3;
+	}
+	.nav {
+		order: 2;
+	}
+
+	.actions {
+		order: 4;
+	}
+
+	.hero {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	.hero__title {
+		font-size: 86px;
+	}
+
+	.hero__content {
+		display: flex;
+		flex-direction: column;
+		flex-shrink: 1;
+		width: 70%;
+	}
+}
+@media (width < 690px) {
+	.hero__title {
+		font-size: 70px;
+	}
+}
+
+@media (width < 560px) {
+	.hero__title {
+		font-size: 64px;
+	}
+	.hero__subtitle {
+		font-size: 18px;
+}
+}
+
+@media (width < 515px) {
+	.hero__title {
+		font-size: 52px;
+	}
+	.hero__subtitle {
+		font-size: 16px;
+}
+}
+
+
+@media (width < 420px) {
+	.nav__list {
+		gap: 17px;
+	}
+
+	.hero__title {
+		font-size: 38px;
+	}
+	.hero__subtitle {
+		font-size: 14px;
+}
+	.hero__text {
+		font-size: 14px;
+	}
+}
